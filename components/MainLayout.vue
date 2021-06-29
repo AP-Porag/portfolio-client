@@ -48,13 +48,13 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#">Home</b-nav-item>
-            <b-nav-item href="#">Me</b-nav-item>
+            <b-nav-item href="#" v-b-modal.modal-xl>Home</b-nav-item>
+            <ModalMeComponent/>
             <b-nav-item href="#">Service</b-nav-item>
             <b-nav-item href="#">Portfolio</b-nav-item>
-            <b-nav-item href="#">Skills</b-nav-item>
-            <b-nav-item href="#">Experience</b-nav-item>
-            <b-nav-item href="#">Education</b-nav-item>
+            <ModalSkillsComponent/>
+            <ModalExperienceComponent/>
+            <ModalEducationComponent/>
             <b-nav-item href="#">Testimonial</b-nav-item>
             <b-nav-item href="#">Contact</b-nav-item>
           </b-navbar-nav>
@@ -357,94 +357,26 @@
     </footer>
     <!-- end copyright -->
 
+    <!--    modals-->
+    <b-modal id="modal-me" size="xl" title="Extra Large Modal" :cancel-disabled="true">Hello Me Modal!</b-modal>
+    <b-modal id="modal-skills" size="xl" title="Extra Large Modal">Hello skills Modal!</b-modal>
+    <b-modal id="modal-experience" size="xl" title="Extra Large Modal">Hello experience Modal!</b-modal>
+    <b-modal id="modal-education" size="xl" title="Extra Large Modal">Hello education Modal!</b-modal>
+    <!--    modals-->
   </div>
 </template>
 
 <script>
+import ModalMeComponent from "~/components/ModalMeComponent";
+import ModalSkillsComponent from "~/components/ModalSkillsComponent";
+import ModalExperienceComponent from "~/components/ModalExperienceComponent";
+import ModalEducationComponent from "~/components/ModalEducationComponent";
 export default {
-  name: "MainLayout"
+  name: "MainLayout",
+  components: {ModalEducationComponent, ModalExperienceComponent, ModalSkillsComponent, ModalMeComponent}
 }
 </script>
 
 <style scoped>
 
-/*top bar*/
-.top-bar{
-  padding-top: 20px;
-  background-color: #303030;
-  color: white;
-}
-.text_name{
-  font-size: 14px;
-}
-.text_email{
-  color: #007bff;
-  font-size: 14px;
-}
-.text_email:hover{
-  color: #ffffff;
-}
-.top_bar_icon{
-  font-size: 11px;
-}
-.social_icon{
-  display: flex;
-  float: right;
-}
-.social_icon_list{
-  list-style: none;
-  margin-right: 15px;
-  font-size: 14px;
-  font-weight: bold;
-  color: white;
-  text-align: right;
-}
-.social_icon_icon{
-  color: #007bff;
-  font-size: 20px;
-}
-.social_icon_icon:hover{
-  color: #ffffff;
-}
-/*top bar end*/
-
-/*navigation bar*/
-.navigation_bar{
-  background-color: #3bbbb5;
-}
-.navbar{
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.navbar-brand:hover{
-  color: #303030;
-  transition: 0.5s color linear;
-}
-.nav-item{
-  padding-top: 8px;
-  padding-bottom: 8px;
-  background-color: rgba(143,145,152,0);
-  transition: 0.5s background linear;
-}
-.nav-item:hover{
-  background-color: rgba(143,145,152,1);
-  transition: 0.5s background linear;
-}
-.nav-link{
-  text-transform: capitalize;
-  color: #303030 !important;
-  transition: 0.5s color linear;
-}
-.nav-item:hover .nav-link{
-  color: #ffffff !important;
-  transition: 0.5s color linear;
-}
-
-/*navigation bar end*/
-
-/*footer bar*/
-.footer{
-  background-color: #3bbbb5;
-}
-/*footer bar end*/
 </style>
