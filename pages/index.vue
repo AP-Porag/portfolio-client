@@ -1,7 +1,10 @@
 <template>
-  <Tutorial/>
+<MainLayout/>
 </template>
 
 <script>
-export default {}
+import MainLayout from "~/components/MainLayout";
+export default {
+  components: {MainLayout}
+}
 </script>
