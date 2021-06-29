@@ -13,7 +13,7 @@
         <div class="about">
           <div class="row">
             <div class="col-md-4 about-left ">
-              <img src="~/assets/images/team-img1.jpg" class="img-fluid" alt="asraf porag">
+              <img src="~/assets/images/3L-1.jpg" class="img-fluid" alt="asraf porag">
             </div>
             <div class="col-md-8 about-right">
               <h3>Hi, i'm <span>S. Asraf Porag </span></h3>
