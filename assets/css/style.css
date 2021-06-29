@@ -1,0 +1,166 @@
+/*Common CSS*/
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+/*Common CSS end*/
+.main_page_layout{
+  background: #e0f7f6;
+}
+/*top bar*/
+.top-bar{
+  padding-top: 20px;
+  background-color: #303030;
+  color: white;
+}
+.text_name{
+  font-size: 14px;
+}
+.text_email{
+  color: #007bff;
+  font-size: 14px;
+}
+.text_email:hover{
+  color: #ffffff;
+}
+.top_bar_icon{
+  font-size: 11px;
+}
+.social_icon{
+  display: flex;
+  float: right;
+}
+.social_icon_list{
+  list-style: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+}
+.social_icon_icon{
+  color: #007bff;
+  font-size: 20px;
+}
+.social_icon_icon:hover{
+  color: #ffffff;
+}
+/*top bar end*/
+
+/*navigation bar*/
+.navigation_bar{
+  background-color: #3bbbb5;
+}
+.navbar{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.navbar-brand:hover{
+  color: #303030;
+  transition: 0.5s color linear;
+}
+.nav-item{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: rgba(143,145,152,0);
+  transition: 0.5s background linear;
+}
+.nav-item:hover{
+  background-color: rgba(143,145,152,1);
+  transition: 0.5s background linear;
+}
+.nav-link{
+  text-transform: capitalize;
+  color: #303030 !important;
+  transition: 0.5s color linear;
+}
+.nav-item:hover .nav-link{
+  color: #ffffff !important;
+  transition: 0.5s color linear;
+}
+.modal_btn{
+  background-color: #3bbbb5;
+  border: 0;
+  border-radius: 0;
+  transition: 0.5s background linear;
+}
+.modal_btn:hover{
+  background-color: rgba(143,145,152,1);
+  transition: 0.5s background linear;
+}
+.modal_btn:hover{
+  transition: 0.5s color linear;
+  color: #ffffff !important;
+}
+/*navigation bar end*/
+
+/*footer bar*/
+.footer{
+  background-color: #3bbbb5;
+}
+/*footer bar end*/
+
+/*modals*/
+/*about modals*/
+.about-left img {
+  border: 5px solid #1dadd3;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  padding: 10px;
+}
+.about-right h3 {
+  font-size: 2.5em;
+  color: #fff;
+}
+.about-right h3 span {
+  color: #f3286c;
+}
+.about-right h4{
+  font-size: 1.2em;
+  color: #a5a5a5;
+  margin-top: 1em;
+}
+
+ul.address {
+  margin-top: 1.5em;
+  border-top: 1px dashed #1d7288;
+  padding-top: 0.5em;
+}
+
+ul, label {
+  margin: 0;
+  padding: 0;
+}
+ul.address li {
+  display: block;
+}
+ul.address li ul.agileits-address-text li:nth-child(1) {
+  width: 20%;
+}
+
+ul.address li ul.agileits-address-text li {
+  display: inline-block;
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 1em;
+  font-weight: 100;
+}
+.about-text {
+  padding: 3em 3em 0;
+}
+.about-text p {
+  font-size: 1em;
+  color: #fff;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+.about-text p.agile-br {
+  margin-top: 1em;
+  text-align: justify;
+}
+/*about modals end*/
