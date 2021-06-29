@@ -65,18 +65,27 @@
 
     <!-- start home -->
     <section id="home">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-offset-2 col-md-8">
-            <h1 class="wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">We make templates that are <span>awesome</span></h1>
-            <div class="element">
-              <div class="sub-element">Hello, this is Typed.js</div>
-              <div class="sub-element">Awesome Template is provided by templatemo.com website for everyone</div>
-              <div class="sub-element">Download, edit and apply this awesome template for your websites</div>
-            </div>
-            <a data-scroll href="#about" class="btn btn-default wow fadeInUp" data-wow-offset="50" data-wow-delay="0.6s">GET STARTED</a>
-          </div>
-        </div>
+      <div class="content-block" id="header">
+        <div id="overlay-1">
+
+          <div class="middle text-center clearfix">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-md-4">
+                  <div class="about-left ">
+                    <img src="~/assets/images/3L-1.jpg" class="img-fluid" alt="asraf porag">
+                  </div>
+                </div>
+              </div>
+              <h1 class="pro-name text-capitalize">full stack developer</h1>
+              <p class="tagline text-capitalize">Php | Laravel | Node | react | Vue</p>
+              <div class="skills">
+
+              </div>  <!-- skills -->
+              <a href="#contact" class="btn btn-lg btn-hire wow animated zoomIn">Hire Me</a>
+            </div>  <!-- container -->
+          </div>  <!-- middle -->
+        </div>  <!-- overlay-1 -->
       </div>
     </section>
     <!-- end home -->
@@ -357,12 +366,6 @@
     </footer>
     <!-- end copyright -->
 
-    <!--    modals-->
-    <b-modal id="modal-me" size="xl" title="Extra Large Modal" :cancel-disabled="true">Hello Me Modal!</b-modal>
-    <b-modal id="modal-skills" size="xl" title="Extra Large Modal">Hello skills Modal!</b-modal>
-    <b-modal id="modal-experience" size="xl" title="Extra Large Modal">Hello experience Modal!</b-modal>
-    <b-modal id="modal-education" size="xl" title="Extra Large Modal">Hello education Modal!</b-modal>
-    <!--    modals-->
   </div>
 </template>
 
