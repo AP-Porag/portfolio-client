@@ -48,15 +48,15 @@
 
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
-            <b-nav-item href="#" v-b-modal.modal-xl>Home</b-nav-item>
+            <b-nav-item href="#home" v-b-modal.modal-xl>Home</b-nav-item>
             <ModalMeComponent/>
-            <b-nav-item href="#">Service</b-nav-item>
-            <b-nav-item href="#">Portfolio</b-nav-item>
-            <ModalSkillsComponent/>
+            <b-nav-item href="#service">Service</b-nav-item>
+            <b-nav-item href="#portfolio">Portfolio</b-nav-item>
+            <b-nav-item to="/skills">Skills</b-nav-item>
             <ModalExperienceComponent/>
             <ModalEducationComponent/>
-            <b-nav-item href="#">Testimonial</b-nav-item>
-            <b-nav-item href="#">Contact</b-nav-item>
+<!--            <b-nav-item href="#testimonial">Testimonial</b-nav-item>-->
+            <b-nav-item href="#contact">Contact</b-nav-item>
           </b-navbar-nav>
         </b-collapse>
       </b-navbar>
@@ -90,263 +90,287 @@
     </section>
     <!-- end home -->
 
-    <!-- start about -->
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">WE ARE <span>AWESOME</span></h2>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-mobile"></i>
-                </div>
-                <h3 class="media-heading">FULLY RESPONSIVE</h3>
-              </div>
-              <div class="media-body">
-                <p>Awesome responsive template is provided by <a rel="nofollow" href="http://www.templatemo.com" target="_parent">templatemo</a> website. This is Bootstrap v3.3.2 layout built on HTML5 CSS3. You can use this for any purpose. Please tell your friends about it.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-offset="50" data-wow-delay="0.9s">
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-comment-o"></i>
-                </div>
-                <h3 class="media-heading">FREE SUPPORT</h3>
-              </div>
-              <div class="media-body">
-                <p>Credits go to <a rel="nofollow" href="http://pixabay.com">Pixabay</a> for homepage image and <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for portfolio images. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-4 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="media">
-              <div class="media-heading-wrapper">
-                <div class="media-object pull-left">
-                  <i class="fa fa-html5"></i>
-                </div>
-                <h3 class="media-heading">HTML5 &AMP; CSS3</h3>
-              </div>
-              <div class="media-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end about -->
-
-    <!-- start team -->
-    <section id="team">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> TEAM</h2>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
-            <div class="team-wrapper">
-              <img src="~/assets/images/team-img1.jpg" class="img-responsive" alt="team img 1">
-              <div class="team-des">
-                <h4>TRACY</h4>
-                <span>Designer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
-            <div class="team-wrapper">
-              <img src="~/assets/images/team-img2.jpg" class="img-responsive" alt="team img 2">
-              <div class="team-des">
-                <h4>MARY</h4>
-                <span>Developer</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.3s">
-            <div class="team-wrapper">
-              <img src="~/assets/images/team-img3.jpg" class="img-responsive" alt="team img 3">
-              <div class="team-des">
-                <h4>JULIA</h4>
-                <span>Director</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="1.6s">
-            <div class="team-wrapper">
-              <img src="~/assets/images/team-img4.jpg" class="img-responsive" alt="team img 4">
-              <div class="team-des">
-                <h4>LINDA</h4>
-                <span>Manager</span>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molest.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end team -->
-
     <!-- start service -->
-    <section id="service">
+    <section id="service" class="service-area">
       <div class="container">
+        <h2 class="block_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Services</font></font></h2>
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">OUR <span>AWESOME</span> THINGS</h2>
+          <div class="col-md-3 col-sm-6">
+            <div class="services">
+              <div class="service-wrap">
+                <i class="pe-7s-science pe-dj pe-va"></i>
+                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Creative ideas</font></font></h3>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </font><font style="vertical-align: inherit;">Snacks, please.</font></font></p>
+              </div>
+            </div>
+
           </div>
-          <div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <i class="fa fa-laptop"></i>
-            <h4>Web Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="services">
+              <div class="service-wrap">
+                <i class="pe-7s-monitor pe-dj pe-va"></i>
+                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">responsive Design</font></font></h3>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </font><font style="vertical-align: inherit;">Snacks, please.</font></font></p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 active wow fadeIn" data-wow-offset="50" data-wow-delay="0.9s">
-            <i class="fa fa-cloud"></i>
-            <h4>Cloud Computing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="services">
+              <div class="service-wrap">
+                <i class="pe-7s-edit pe-dj pe-va"></i>
+                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Clean and nice</font></font></h3>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </font><font style="vertical-align: inherit;">Snacks, please.</font></font></p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <i class="fa fa-cog"></i>
-            <h4>UX Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie. Adipiscing vitae vel quam proin eget mauris eget. Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</p>
+          <div class="col-md-3 col-sm-6">
+            <div class="services">
+              <div class="service-wrap">
+                <i class="pe-7s-config pe-dj pe-va"></i>
+                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Support</font></font></h3>
+                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </font><font style="vertical-align: inherit;">Snacks, please.</font></font></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- end servie -->
+    <!-- end service -->
 
     <!-- start portfolio -->
-    <section id="portfolio">
-      <div class="container">
+    <section id="portfolio" class="service-area">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="block_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">My Latest Work</font></font></h2>
+            </div>
+          </div>
+        </div>
         <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s"><span>AWESOME</span> PORTFOLIO</h2>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img 1">
-              <div class="portfolio-overlay">
-                <h4>Project One</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+<!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img 2">
-              <div class="portfolio-overlay">
-                <h4>Project Two</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+<!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img 3">
-              <div class="portfolio-overlay">
-                <h4>Project Three</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img 4">
-              <div class="portfolio-overlay">
-                <h4>Project Four</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img3.jpg" class="img-responsive" alt="portfolio img 3">
-              <div class="portfolio-overlay">
-                <h4>Project Five</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img4.jpg" class="img-responsive" alt="portfolio img 4">
-              <div class="portfolio-overlay">
-                <h4>Project Six</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img1.jpg" class="img-responsive" alt="portfolio img 1">
-              <div class="portfolio-overlay">
-                <h4>Project Seven</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12 wow fadeIn" data-wow-offset="50" data-wow-delay="0.6s">
-            <div class="portfolio-thumb">
-              <img src="~/assets/images/portfolio-img2.jpg" class="img-responsive" alt="portfolio img 2">
-              <div class="portfolio-overlay">
-                <h4>Project Eight</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget dia.</p>
-                <a href="#" class="btn btn-default">DETAIL</a>
+          <!--          single work box end-->
+
+          <!--          single work box start-->
+          <div class="col-md-3 mb-4">
+            <div class="work_box">
+              <div class="work_details">
+                <img src="~/assets/images/portfolio-img1.jpg" alt="" class="img-fluid">
+                <div class="work_overlay_small">
+                  <h6>Application</h6>
+                  <h5>Project Name</h5>
+                </div>
+                <div class="work_overlay_full">
+                  <h5 class="text-capitalize text-white text-center">Project Name</h5>
+                  <div class="link_icon_box d-flex justify-content-between">
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                    <fa :icon="['fas', 'envelope']" class="mr-2 top_bar_icon text-primary"/>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!--          single work box end-->
         </div>
       </div>
     </section>
     <!-- end portfolio -->
 
+    <!-- start testimonial -->
+<!--    <section id="testimonial" class="service-area">-->
+<!--      <div class="container">-->
+<!--        <h2 class="block_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Testimonial</font></font></h2>-->
+<!--        <div class="row">-->
+<!--          <div class="col-md-12">-->
+<!--            <TestimonialSliderComponent/>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
+    <!-- end testimonial -->
+
     <!-- start contact -->
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">CONTACT <span>AWESOME</span></h2>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-offset="50" data-wow-delay="0.9s">
-            <form action="#" method="post">
-              <label>NAME</label>
-              <input name="fullname" type="text" class="form-control" id="fullname">
-
-              <label>EMAIL</label>
-              <input name="email" type="email" class="form-control" id="email">
-
-              <label>MESSAGE</label>
-              <textarea name="message" rows="4" class="form-control" id="message"></textarea>
-
-              <input type="submit" class="form-control">
-            </form>
-          </div>
-          <div class="col-md-6 col-sm-6 col-xs-12 wow fadeInRight" data-wow-offset="50" data-wow-delay="0.6s">
-            <address>
-              <p class="address-title">OUR ADDRESS</p>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elitquisque tempus ac eget diam et laoreet phasellus ut nisi id leo molestie.</span>
-              <p><i class="fa fa-phone"></i> 010-020-0340</p>
-              <p><i class="fa fa-envelope-o"></i> awesome@company.com</p>
-              <p><i class="fa fa-map-marker"></i> 663 New Walk Roadside, Birdeye View, GO 11020</p>
-            </address>
-            <ul class="social-icon">
-              <li><h4>WE ARE SOCIAL</h4></li>
-              <li><a href="#" class="fa fa-facebook"></a></li>
-              <li><a href="#" class="fa fa-twitter"></a></li>
-              <li><a href="#" class="fa fa-instagram"></a></li>
-            </ul>
+    <section id="contact" class="contact_area">
+      <div class="contact_overlay">
+        <div class="container">
+          <h2 class="block_title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Get In Touch</font></font></h2>
+          <div class="row">
+            <div class="col-md-6 contact-left">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9503398796587!2d-73.9940307!3d40.719109700000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a27e2f24131%3A0x64ffc98d24069f02!2sCANADA!5e0!3m2!1sen!2sin!4v1441710758555" allowfullscreen="true" style="height: 100%;width: 100%;"></iframe>
+            </div>
+            <div class="col-md-6 contact-right">
+              <form action="#" method="post">
+                <div class="styled-input agile-styled-input-top">
+                  <input type="text" class="text_input" name="Name" required="" placeholder="Name">
+                  <span></span>
+                </div>
+                <div class="styled-input">
+                  <input type="text" name="Email" required="" placeholder="Email">
+                  <span></span>
+                </div>
+                <div class="styled-input">
+                  <input type="text" name="Subject" required="" placeholder="Subject">
+                  <span></span>
+                </div>
+                <div class="styled-input"><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension>
+                  <textarea name="Message" required="" spellcheck="false" placeholder="Message"></textarea>
+                  <span></span>
+                </div>
+                <b-btn class="contact_send_btn">Send</b-btn>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -358,8 +382,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <p class="wow bounceIn" data-wow-offset="50" data-wow-delay="0.3s">
-              Copyright &copy; 2084 Company Name</p>
+            <p class="pt-3">
+              All Rights Reserved : Copyright &copy; 2021 S. Asraf Porag</p>
           </div>
         </div>
       </div>
@@ -374,9 +398,12 @@ import ModalMeComponent from "~/components/ModalMeComponent";
 import ModalSkillsComponent from "~/components/ModalSkillsComponent";
 import ModalExperienceComponent from "~/components/ModalExperienceComponent";
 import ModalEducationComponent from "~/components/ModalEducationComponent";
+import TestimonialSliderComponent from "~/components/TestimonialSliderComponent";
 export default {
   name: "MainLayout",
-  components: {ModalEducationComponent, ModalExperienceComponent, ModalSkillsComponent, ModalMeComponent}
+  components: {
+    TestimonialSliderComponent,
+    ModalEducationComponent, ModalExperienceComponent, ModalSkillsComponent, ModalMeComponent}
 }
 </script>
 
